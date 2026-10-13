@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mellow Coffee — кофейня, где хочется замедлиться</title>
+  <meta name="description" content="Mellow Coffee — небольшая кофейня в Москве: зерно свежей обжарки, десерты каждый день и атмосфера, в которую хочется возвращаться." />
+  <meta name="theme-color" content="#FBF5EE" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%232C1E14'/%3E%3Cpath d='M9 12h12v5.5A5.5 5.5 0 0 1 15.5 23h-1A5.5 5.5 0 0 1 9 17.5V12z' fill='%23E8D5C0'/%3E%3Cpath d='M21 13.5h1.6a2.6 2.6 0 0 1 0 5.2H21' stroke='%23E8D5C0' stroke-width='1.6' fill='none'/%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+
+<body>
+  <a class="skip-link" href="#home">К основному содержанию</a>
+
+  <!-- ======================= ШАПКА ======================= -->
+  <header class="site-header" id="header">
+    <div class="container header__inner">
+      <a class="logo" href="#home" aria-label="Mellow Coffee — на главную">
+        <span class="logo__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 8h12v5.5A5.5 5.5 0 0 1 10.5 19h-1A5.5 5.5 0 0 1 4 13.5V8Z" fill="currentColor"/>
+            <path d="M16 9.5h1.6a2.75 2.75 0 0 1 0 5.5H16" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+            <path d="M7.5 5.5V3.5M11.5 5.5V3.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="logo__text">Mellow <em>Coffee</em></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Основная навигация">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#home">Главная</a></li>
+          <li><a class="nav__link" href="#menu">Меню</a></li>
+          <li><a class="nav__link" href="#about">О нас</a></li>
+          <li><a class="nav__link" href="#contacts">Контакты</a></li>
+        </ul>
+        <a class="btn btn--primary nav__cta" href="#menu">Наше меню</a>
+      </nav>
+
+      <button class="burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================= ГЛАВНЫЙ ЭКРАН ======================= -->
+    <section class="hero" id="home">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow">Кофейня на Тихой улице</p>
+          <h1 class="hero__title">Твой маленький повод <span class="accent">замедлиться</span></h1>
+          <p class="hero__text">
+            Свежеобжаренное зерно, тёплый свет и неспешные разговоры. Мы варим кофе,
+            который хочется пить медленно — и возвращаться за ним снова.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#menu">Посмотреть меню</a>
+            <a class="btn btn--ghost" href="#about">Наша история</a>
+          </div>
+        </div>
+
+        <div class="hero__media">
+          <div class="media media--hero">
+            <img
+              src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=80"
+              alt="Чашка свежесваренного кофе на деревянном столе"
+              loading="eager" />
+          </div>
+
+          <div class="hero__badge">
+            <span class="hero__badge-dot" aria-hidden="true"></span>
+            <span>
+              <strong>Ежедневно 08:00–21:00</strong>
+              <span>ул. Тихая, 12</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= ПРЕИМУЩЕСТВА ======================= -->
+    <section class="features" aria-labelledby="features-title">
+      <div class="container">
+        <h2 class="visually-hidden" id="features-title">Почему гости выбирают Mellow Coffee</h2>
+
+        <div class="features__grid">
+          <article class="feature reveal">
+            <span class="feature__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <ellipse cx="12" cy="12" rx="6" ry="9" transform="rotate(45 12 12)"/>
+                <path d="M9.2 9.2c1.9 1.6 3.7 3.7 5.6 5.6"/>
+              </svg>
+            </span>
+            <h3 class="feature__title">Зерно свежей обжарки</h3>
+            <p class="feature__text">Обжариваем небольшими партиями каждую неделю — вкус остаётся ярким и чистым.</p>
+          </article>
+
+          <article class="feature reveal" data-delay="120">
+            <span class="feature__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 20h16"/>
+                <path d="M5 20v-6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v6"/>
+                <path d="M12 12V8.5"/>
+                <circle cx="12" cy="6.2" r="2.2"/>
+              </svg>
+            </span>
+            <h3 class="feature__title">Десерты каждый день</h3>
+            <p class="feature__text">Свежая выпечка и мягкие десерты — привозим утром, разбирают к вечеру.</p>
+          </article>
+
+          <article class="feature reveal" data-delay="240">
+            <span class="feature__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 11V8a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v3"/>
+                <path d="M3 12a2 2 0 0 1 4 0v3h10v-3a2 2 0 0 1 4 0v6H3v-6z"/>
+              </svg>
+            </span>
+            <h3 class="feature__title">Атмосфера, в которую хочется вернуться</h3>
+            <p class="feature__text">Мягкий свет, тихая музыка и места, где удобно и работать, и просто сидеть.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= МЕНЮ ======================= -->
+    <section class="section menu" id="menu" aria-labelledby="menu-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Меню</p>
+          <h2 class="section__title" id="menu-title">Классика, которую приятно пить каждый день</h2>
+          <p class="section__text">
+            Небольшое меню — зато каждая чашка сделана на совесть. Молоко, зёрна и посуду
+            подбираем так, чтобы вкус был мягким и узнаваемым.
+          </p>
+        </div>
+
+        <div class="menu__grid">
+          <article class="card reveal">
+            <div class="media card__media">
+              <img
+                src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=600&q=80"
+                alt="Капучино с плотной молочной пеной в керамической чашке"
+                loading="lazy" />
+            </div>
+            <div class="card__body">
+              <div class="card__head">
+                <h3 class="card__title">Капучино</h3>
+                <span class="card__price">220 ₽</span>
+              </div>
+              <p class="card__text">Плотная молочная пена и мягкий шоколадный вкус эспрессо.</p>
+            </div>
+          </article>
+
+          <article class="card reveal" data-delay="100">
+            <div class="media card__media">
+              <img
+                src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=600&q=80"
+                alt="Флэт уайт с рисунком на молочной пенке"
+                loading="lazy" />
+            </div>
+            <div class="card__body">
+              <div class="card__head">
+                <h3 class="card__title">Флэт уайт</h3>
+                <span class="card__price">240 ₽</span>
+              </div>
+              <p class="card__text">Больше кофе, меньше молока — насыщенный и бархатистый.</p>
+            </div>
+          </article>
+
+          <article class="card reveal" data-delay="200">
+            <div class="media card__media">
+              <img
+                src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=600&q=80"
+                alt="Латте в высоком стакане на деревянном столе"
+                loading="lazy" />
+            </div>
+            <div class="card__body">
+              <div class="card__head">
+                <h3 class="card__title">Латте</h3>
+                <span class="card__price">250 ₽</span>
+              </div>
+              <p class="card__text">Мягкий, тёплый и сливочный — идеально для неспешного утра.</p>
+            </div>
+          </article>
+
+          <article class="card reveal" data-delay="300">
+            <div class="media card__media">
+              <img
+                src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?auto=format&fit=crop&w=600&q=80"
+                alt="Чашка горячего какао с маршмеллоу"
+                loading="lazy" />
+            </div>
+            <div class="card__body">
+              <div class="card__head">
+                <h3 class="card__title">Какао</h3>
+                <span class="card__price">210 ₽</span>
+              </div>
+              <p class="card__text">Настоящий тёмный шоколад и тёплое молоко — без спешки.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= О НАС ======================= -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container about__inner">
+        <div class="about__media reveal">
+          <div class="media media--about">
+            <img
+              src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=900&q=80"
+              alt="Интерьер кофейни Mellow Coffee: деревянные столы, стулья и тёплый свет"
+              loading="lazy" />
+          </div>
+        </div>
+
+        <div class="about__content reveal" data-delay="120">
+          <p class="eyebrow">О нас</p>
+          <h2 class="section__title" id="about-title">Место для неспешных утр и тёплых встреч</h2>
+          <p class="section__text">
+            Mellow Coffee начинался как маленькая кофейня на углу тихой улицы. Мы хотели
+            сделать место, куда заходят не «по пути», а специально: выпить кофе, поработать
+            за ноутбуком или просто посидеть у окна.
+          </p>
+          <p class="section__text">
+            У нас немного столиков и всегда спокойно. Мы знаем своих гостей в лицо,
+            помним, кто пьёт капучино без сахара, и не торопим никого.
+          </p>
+
+          <ul class="about__stats">
+            <li><strong>2019</strong><span>год открытия</span></li>
+            <li><strong>7</strong><span>сортов зерна</span></li>
+            <li><strong>4.9</strong><span>рейтинг гостей</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= КОНТАКТЫ ======================= -->
+    <section class="section contacts" id="contacts" aria-labelledby="contacts-title">
+      <div class="container">
+        <div class="contacts__card reveal">
+          <div class="contacts__info">
+            <p class="eyebrow">Контакты</p>
+            <h2 class="section__title" id="contacts-title">Заходите на чашку кофе</h2>
+
+            <ul class="contacts__list">
+              <li>
+                <span class="contacts__label">Адрес</span>
+                <span class="contacts__value">ул. Тихая, 12, Москва</span>
+              </li>
+              <li>
+                <span class="contacts__label">Время работы</span>
+                <span class="contacts__value">ежедневно, 08:00–21:00</span>
+              </li>
+            </ul>
+
+            <a
+              class="btn btn--primary"
+              href="https://yandex.ru/maps/?text=Москва,%20улица%20Тихая,%2012"
+              target="_blank"
+              rel="noopener noreferrer">
+              Построить маршрут
+            </a>
+          </div>
+
+          <div class="contacts__aside">
+            <p class="contacts__aside-title">Сегодня</p>
+            <p class="contacts__hours">08:00 — 21:00</p>
+            <p class="contacts__aside-text">Без выходных и перерывов. Заходите, даже если просто проходили мимо.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================= ФУТЕР ======================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__top">
+        <a class="logo" href="#home" aria-label="Mellow Coffee — на главную">
+          <span class="logo__mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M4 8h12v5.5A5.5 5.5 0 0 1 10.5 19h-1A5.5 5.5 0 0 1 4 13.5V8Z" fill="currentColor"/>
+              <path d="M16 9.5h1.6a2.75 2.75 0 0 1 0 5.5H16" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+              <path d="M7.5 5.5V3.5M11.5 5.5V3.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="logo__text">Mellow <em>Coffee</em></span>
+        </a>
+
+        <nav class="footer__nav" aria-label="Навигация в подвале">
+          <a href="#menu">Меню</a>
+          <a href="#about">О нас</a>
+          <a href="#contacts">Контакты</a>
+        </nav>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© <span id="year">2025</span> Mellow Coffee. Демонстрационный проект.</p>
+        <p>Москва, ул. Тихая, 12</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
